@@ -15,4 +15,5 @@ func count(name string, tlen int) {
 func main() {
 	go count("カエル", 200)
 	go count("アヒル", 100)
+	time.Sleep(3000 * time.Millisecond) // mainルーチンに暫く寝てもらい、gorourtineが走れるようにする
 }
